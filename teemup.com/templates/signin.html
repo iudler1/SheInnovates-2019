@@ -3,8 +3,8 @@
 <head>
     <title>Teem Up</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="../static/home.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<link rel="icon" type ="image/png" href="images/icons/teemiconi.ico"/>
     <!--===============================================================================================-->
@@ -25,17 +25,7 @@
   </head>
 
 <body>
-
-<!-- NAVIGATION BAR -->
-
-<div class="topnav">
-    <a class="active" href="home.html" id = "home">Teem Up</a>
-    <a href="find.html" id = "find">Find</a>
-    <a href="create.html" id = "create">Create</a>
-    <a href="yourEvents.html" id = "yourEvents">Your Events</a>
-    <a href="account.html" id = "account">Account</a>
-</div>
-
+ 
 
 <!-- CREATE EVENT FORM -->
 
@@ -45,53 +35,25 @@
     <div class="wrap-contact2">
       <form class="contact2-form validate-form">
         <span class="contact2-form-title" id="createEventTitle">
-          Create an Event
+          Create an account<br><a href="signin.html"> or sign in if you already have one</a>
         </span>
 
-        <div class="wrap-input2 validate-input" data-validate="Event Name is required">
-          <input class="input2" type="text" name="name">
-          <span class="focus-input2" data-placeholder="EVENT NAME"></span>
+        <div class="wrap-input2 validate-input" data-validate = "Email is required">
+          <input class="input2" type="text" name="email">
+          <span class="focus-input2" data-placeholder="Please use your @pitt.edu email"></span>
         </div>
 
-        <div class="wrap-input2 validate-input" data-validate = "Category is required">
-          <input class="input2" type="text" name="">
-          <span class="focus-input2" data-placeholder="CATEGORY"></span>
+        <div class="wrap-input2 validate-input" data-validate = "Password is required">
+          <input class="pass" type = "password" name="pass">
+          <span class="focus-input2" data-placeholder="Please enter your password"></span>
         </div>
-
-        <div class="wrap-input2 validate-input" data-validate = "Location is required">
-          <input class="input2" type = "text" name="location">
-          <span class="focus-input2" data-placeholder="LOCATION"></span>
-        </div>
-
-        <div class="wrap-input2 validate-input" data-validate = "Time is required">
-          <input class="input2" name="message">
-          <span class="focus-input2" data-placeholder="TIME"></span>
-        </div>
-        <div class="wrap-input2 validate-input" data-validate = "Dates is required">
-          <input class="input2" name="message">
-          <span class="focus-input2" data-placeholder="DATES"></span>
-        </div>
-        <div class="wrap-input2 validate-input" data-validate = "Amount of people is required">
-          <input class="input2" type = "text" name="message">
-          <span class="focus-input2" data-placeholder="AMOUNT OF PEOPLE"></span>
-        </div>
-
-        <div class="wrap-input2 validate-input" data-validate = "Description is required">
-          <textarea class="input2" name="description"></textarea>
-          <span class="focus-input2" data-placeholder="DESCRIPTION"></span>
-        </div>
-
-        <div class="wrap-input2 validate-input" data-validate = "Clearance details are required">
-          <textarea class="input2" name="message"></textarea>
-          <span class="focus-input2" data-placeholder="CLEARANCES"></span>
-        </div>
-
+        
+        
 
         <div class="container-contact2-form-btn">
           <div class="wrap-contact2-form-btn">
             <div class="contact2-form-bgbtn"></div>
-            <button class="contact2-form-btn">
-              Submit Request
+            <button class="contact2-form-btn"><a href = "home.html">Sign in</a>
             </button>
           </div>
         </div>
@@ -123,14 +85,6 @@
   gtag('config', 'UA-23581568-13');
 </script>
 
-
-
-<footer>
-<p>
-    Page, Sona, Jessie, Ilana <br>
-    2019 SheInnovates
-</p>
-</footer>
 
 
 
