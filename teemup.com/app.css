@@ -2,7 +2,9 @@
 {
     background-color: black;
     color: white;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Cantarell', sans-serif;
     font-size: 100px;
-}
+    padding-top: 100px;
+    padding-left: 100px;       
+} 
 
