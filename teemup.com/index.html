@@ -3,20 +3,46 @@
 <head>
 <title>Teem Up</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+
+<style>
+    .button {
+        background-color: transparent; 
+        border: grey;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .button1 {border-radius: 8px}
+</style>
+
 
 </head>
 
 
 <body>    
 
+
+
     <div id="particles"></div>    
     <div id ="particles-js"></div>    
 
     <section id="header">  
-        <h1 id="title">TEEM UP</h1>
+        <h1 id="title">Teem Up</h1>
         <p id="motto">Find your people.</p>    
     </section>   
+
+    <section id="button">
+            <button class="button button1" id = "enterButton">Enter &#8594;</button>
+    </section>
 
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
