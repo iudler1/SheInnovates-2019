@@ -2,9 +2,32 @@
 <html>
 <head>
     <title>Teem Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-</head>
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="css/util.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+
+
+
+
+  </head>
 
 <body>
 
@@ -20,65 +43,90 @@
 
 
 <!-- CREATE EVENT FORM -->
-<style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box;}
-        
-        input[type=text], select, textarea {
-          width: 100%;
-          padding: 12px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          box-sizing: border-box;
-          margin-top: 6px;
-          margin-bottom: 16px;
-          resize: vertica<l;
-        }
-        
-        input[type=submit] {
-          background-color: #4CAF50;
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-        
-        input[type=submit]:hover {
-          background-color: #45a049;
-        }
-        
-        .container {
-          border-radius: 5px;
-          background-color: #f2f2f2;
-          padding: 20px;
-        }
-        </style>
-        
-<p>Create an event:</p>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">Event name: </label>
-    <input type="text" id="fname" name="firstname" placeholder="Your event name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+  <div class="container-contact2">
+    <div class="wrap-contact2">
+      <form class="contact2-form validate-form">
+        <span class="contact2-form-title">
+          Create an Event
+        </span>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+        <div class="wrap-input2 validate-input" data-validate="Event Name is required">
+          <input class="input2" type="text" name="name">
+          <span class="focus-input2" data-placeholder="EVENT NAME"></span>
+        </div>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <div class="wrap-input2 validate-input" data-validate = "Category is required">
+          <input class="input2" type="text" name="">
+          <span class="focus-input2" data-placeholder="CATEGORY"></span>
+        </div>
 
-    <input type="submit" value="Submit">
-  </form>
+        <div class="wrap-input2 validate-input" data-validate = "Location is required">
+          <input class="input2" type = "text" name="location">
+          <span class="focus-input2" data-placeholder="LOCATION"></span>
+        </div>
+        
+        <div class="wrap-input2 validate-input" data-validate = "Time is required">
+          <input class="input2" name="message">
+          <span class="focus-input2" data-placeholder="TIME"></span>
+        </div>
+        <div class="wrap-input2 validate-input" data-validate = "Dates is required">
+          <input class="input2" name="message">
+          <span class="focus-input2" data-placeholder="DATES"></span>
+        </div>
+        <div class="wrap-input2 validate-input" data-validate = "Amount of people is required">
+          <input class="input2" type = "text" name="message">
+          <span class="focus-input2" data-placeholder="AMOUNT OF PEOPLE"></span>
+        </div>
+
+        <div class="wrap-input2 validate-input" data-validate = "Description is required">
+          <textarea class="input2" name="description"></textarea>
+          <span class="focus-input2" data-placeholder="DESCRIPTION"></span>
+        </div>
+        
+        <div class="wrap-input2 validate-input" data-validate = "Clearance details are required">
+          <textarea class="input2" name="message"></textarea>
+          <span class="focus-input2" data-placeholder="CLEARANCES"></span>
+        </div>
+        
+        
+        <div class="container-contact2-form-btn">
+          <div class="wrap-contact2-form-btn">
+            <div class="contact2-form-bgbtn"></div>
+            <button class="contact2-form-btn">
+              Submit Request
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
+
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
 
 
 
