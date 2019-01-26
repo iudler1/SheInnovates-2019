@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-#import sqlite3
-#import click`
+from db import session, User
 
 app = Flask(__name__)
 
