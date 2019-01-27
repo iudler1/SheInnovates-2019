@@ -28,7 +28,7 @@ def signin():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        print(email + password)
+        session.add()
         return render_template('home.html', email=email)
     return render_template("signin.html")
 
@@ -40,7 +40,7 @@ def home():
 def account():
     return render_template("account.html")
 
-@app.route("/create.html, methods=['GET', 'POST']")
+@app.route("/create.html", "methods=['GET', 'POST']")
 def create():
     return render_template("create.html")
 
