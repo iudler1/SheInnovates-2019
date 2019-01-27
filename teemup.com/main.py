@@ -2,7 +2,18 @@ from flask import Flask, render_template, request
 from db import session, User
 
 app = Flask(__name__, static_folder="static")
+"""
+@app.route('/send', methods=['GET', 'POST'])
+def send():
+      if request.method == 'POST':
+            email = request.form['email']
+            password = request.form['password']
 
+            print(email + password)
+            return render_template('success.html', email=email)
+
+      return render_template('signin.html')
+"""
 @app.route("/")
 @app.route("/index.html")
 def index():
@@ -12,8 +23,13 @@ def index():
 def signup():
     return render_template("signup.html")
 
-@app.route("/signin.html")
+@app.route("/signin.html", methods=['GET', 'POST'])
 def signin():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        print(email + password)
+        return render_template('home.html', email=email)
     return render_template("signin.html")
 
 @app.route("/home.html")
