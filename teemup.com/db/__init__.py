@@ -10,11 +10,22 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "User"
     id = Column(Integer, primary_key=True)
-    username = Column(String(80), unique=True, nullable=False)
+    firstName = Column(String(80), unique=True, nullable=False)
+    lastName = Column(String(80), unique=True, nullable=False)
     email = Column(String(120), unique=True, nullable=False)
-
+    password = Column(String(80), unique=True, nullable=False)
     def __repr__(self):
         return '<User %r>' % self.username
+
+class Event(Base):
+    __tablename__ = "Event"
+    id = Column(Integer, primary_key=True)
+    name = Column(String(80), unique=True, nullable=False)
+    location = Column(String(80), nullable=False)
+    description = Column(String(300), unique = True, nullable=False)
+    numberOfPeople = Column(Integer, nullable=False)
+    def __repr__(self):
+        return '<Event %r>' % self.name
 
 Base.metadata.create_all(engine)
 

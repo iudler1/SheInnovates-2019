@@ -15,7 +15,7 @@ def signup():
 @app.route("/signin.html")
 def signin():
     return render_template("signin.html")
-    
+
 @app.route("/home.html")
 def home():
     return render_template("home.html")
