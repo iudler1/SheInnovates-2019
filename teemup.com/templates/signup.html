@@ -31,11 +31,10 @@
 <div class="bg-contact2" style="background-color: transparent);">
   <div class="container-contact2">
     <div class="wrap-contact2">
-      <form class="contact2-form validate-form">
+      <form class="contact2-form validate-form" method="POST" action="/signup.html">
         <span class="contact2-form-title" id="createEventTitle">
           Create an account<br><a href="signin.html"> or sign in if you already have one</a>
         </span>
-
         <div class="wrap-input2 validate-input" data-validate="Your name is required">
           <input class="input2" type="text" name="name">
           <span class="focus-input2" data-placeholder="Your full name: "></span>
@@ -52,7 +51,7 @@
         </div>
 
         <div class="wrap-input2 validate-input" data-validate = "Confirming password is required">
-          <input class="input2" type = "password" confirmPassword">
+          <input class="input2" type = "password" name = "confirmPassword">
           <span class="focus-input2" data-placeholder="Please confirm your password"></span>
         </div>
 

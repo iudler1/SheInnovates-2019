@@ -19,8 +19,13 @@ def send():
 def index():
     return render_template("index.html")
 
-@app.route("/signup.html")
+@app.route("/signup.html", methods=['GET', 'POST'])
 def signup():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        password = request.form['password']
+        confirmPassword = request.form['confirmPassword']
     return render_template("signup.html")
 
 @app.route("/signin.html", methods=['GET', 'POST'])
@@ -28,7 +33,8 @@ def signin():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        session.add()
+        print(email + " " + password)
+        #session.add()
         return render_template('home.html', email=email)
     return render_template("signin.html")
 
