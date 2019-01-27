@@ -19,12 +19,8 @@
 
   /* Change the color of links on hover */
   .topnav a:hover {
-  text-decoration: none;
-  text-align: center;
-  font-weight: 700;
-  transition: 0.2s;
-  flex: 1 1 25%;
-  color: #000;
+    background-color: #ddd;
+    color: black;
   }
 
   /* Add a color to the active/current link */
@@ -32,55 +28,6 @@
     background-color: transparent;
     color: black;
   }
-
-.eventOne{
-  display: grid;
-  grid-template-columns: 40%;
-}
-
-.eventContainer {
-  position: relative;
-  width: 50%;
-  padding-left:75px;
-}
-
-.eventImage {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.eventOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #eee;
-}
-
-.eventContainer:hover .eventOverlay {
-  opacity: 1;
-}
-
-.eventText {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.eventText > h2{
-  font-size: 45px;
-}
 
 #home
 {
@@ -135,13 +82,5 @@ footer
 #highlights
 {
     size: 100px;
-    color: purple;
-}
-
-
-#sona
-{
-    padding-right: 10px;
-    width: 105%;
-    height: 105%;
+    color: blue;
 }
