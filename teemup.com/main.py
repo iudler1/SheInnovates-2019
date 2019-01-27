@@ -14,6 +14,10 @@ def send():
 
       return render_template('signin.html')
 """
+current_name = ""
+current_email = ""
+current_password = ""
+
 @app.route("/")
 @app.route("/index.html")
 def index():
@@ -25,7 +29,23 @@ def signup():
         name = request.form['name']
         email = request.form['email']
         password = request.form['password']
+        current_name = name
+        current_email = email
+        current_password = password
         confirmPassword = request.form['confirmPassword']
+        print("name: " + current_name)
+        print("email: " + current_email)
+        print("password: " + current_password)
+        print("confirmPassword: " + confirmPassword)
+        user = User(name=name, email=email, password=password)
+        #user.name = name
+        #user.email = email
+        #user.password = password
+        session.add(user)
+        session.commit()
+        print(session.query(User).all())
+        #User.query.all()
+        return render_template('home.html', email=email)
     return render_template("signup.html")
 
 @app.route("/signin.html", methods=['GET', 'POST'])
@@ -33,6 +53,8 @@ def signin():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
+        current_email = email
+        current_password = passsword
         print(email + " " + password)
         #session.add()
         return render_template('home.html', email=email)
