@@ -22,3 +22,5 @@ def find():
 @app.route("/yourEvents/")
 def yourEvents():
     return render_template("yourEvents.html")
+
+
