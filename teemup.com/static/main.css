@@ -426,7 +426,7 @@ textarea.input2 + .focus-input2::after {
 
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
-  color: #fff;
+  color: black;
   line-height: 1.2;
   
 
