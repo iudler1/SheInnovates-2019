@@ -4,6 +4,10 @@ from db import session, User
 app = Flask(__name__, static_folder="static")
 
 @app.route("/")
+@app.route("/index.html")
+def index():
+    return render_template("index.html")
+    
 @app.route("/home.html")
 def home():
     return render_template("home.html")
