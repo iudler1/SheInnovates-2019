@@ -40,7 +40,7 @@ def home():
 def account():
     return render_template("account.html")
 
-@app.route("/create.html", "methods=['GET', 'POST']")
+@app.route("/create.html", methods=['GET', 'POST'])
 def create():
     return render_template("create.html")
 
