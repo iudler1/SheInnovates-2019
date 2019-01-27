@@ -7,6 +7,14 @@ app = Flask(__name__, static_folder="static")
 @app.route("/index.html")
 def index():
     return render_template("index.html")
+
+@app.route("/signup.html")
+def signup():
+    return render_template("signup.html")
+
+@app.route("/signin.html")
+def signin():
+    return render_template("signin.html")
     
 @app.route("/home.html")
 def home():
