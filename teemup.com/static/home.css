@@ -79,3 +79,8 @@ footer
     padding-left: 5%;
 }
 
+#highlights
+{
+    size: 100px;
+    color: magenta;
+}
