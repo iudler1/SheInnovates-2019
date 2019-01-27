@@ -36,11 +36,11 @@ def signin():
 def home():
     return render_template("home.html")
 
-@app.route("/account.html")
+@app.route("/account.html", methods=['GET', 'POST'])
 def account():
     return render_template("account.html")
 
-@app.route("/create.html")
+@app.route("/create.html, methods=['GET', 'POST']")
 def create():
     return render_template("create.html")
 
@@ -54,4 +54,3 @@ def yourEvents():
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')
-
