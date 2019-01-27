@@ -10,12 +10,11 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "User"
     id = Column(Integer, primary_key=True)
-    firstName = Column(String(80), unique=True, nullable=False)
-    lastName = Column(String(80), unique=True, nullable=False)
+    name = Column(String(80), unique=True, nullable=False)
     email = Column(String(120), unique=True, nullable=False)
     password = Column(String(80), unique=True, nullable=False)
     def __repr__(self):
-        return '<User %r>' % self.username
+        return '<User %r>' % self.name
 
 class Event(Base):
     __tablename__ = "Event"
